@@ -1,5 +1,6 @@
+[![Build Status](https://travis-ci.org/theno/openssl.svg?branch=master)](https://travis-ci.org/theno/openssl)
 
- OpenSSL 1.1.1-dev
+# OpenSSL 1.1.1-dev
 
  Copyright (c) 1998-2016 The OpenSSL Project
  Copyright (c) 1995-1998 Eric A. Young, Tim J. Hudson
