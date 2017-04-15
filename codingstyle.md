@@ -16,7 +16,6 @@ terms of the kernel license, available here:
 Coding style is all about readability and maintainability using commonly
 available tools. OpenSSL coding style is simple. Avoid tricky expressions.
 
-
 ## Chapter 1: Indentation
 
 Indentation is four space characters. Do not use the tab character.
@@ -28,7 +27,6 @@ Pre-processor directives use one space for indents:
     #else
     # define
     #endif
-
 
 ## Chapter 2: Breaking long lines and strings
 
@@ -44,7 +42,6 @@ information. Descendants are always substantially shorter than the parent
 and are placed substantially to the right. The same applies to function
 headers with a long argument list. Never break user-visible strings,
 however, because that breaks the ability to grep for them.
-
 
 ## Chapter 3: Placing Braces and Spaces
 
@@ -145,7 +142,6 @@ to avoid the dangling-else problem:
         otherwise();
     }
 
-
 ## Chapter 3.1:  Spaces
 
 OpenSSL style for use of spaces depends (mostly) on whether the name is
@@ -160,7 +156,6 @@ use a variable when at all possible, to ensure that type changes are
 properly reflected:
 
     SOMETYPE *p = OPENSSL_malloc(sizeof(*p) * num_of_elements);
-
 
 Do not add spaces around the inside of parenthesized expressions.
 This example is wrong:
@@ -204,7 +199,6 @@ can optionally strip the trailing whitespace; however, if applying
 a series of patches, this may make later patches in the series fail by
 changing their context lines.
 
-
 ## Chapter 4: Naming
 
 C is a Spartan language, and so should your naming be. Do not use long
@@ -228,7 +222,6 @@ variable that is used to hold a temporary value.
 
 If you are afraid that someone might mix up your local variable names,
 perhaps the function is too long; see Chapter 6.
-
 
 ## Chapter 5: Typedefs
 
@@ -260,7 +253,6 @@ definitions public; this has caused problems with maintaining binary
 compatibility and adding features. Our stated direction is to have struct's
 be opaque and only expose pointers in the API. The actual struct definition
 should be defined in a local header file that is not exported.
-
 
 ## Chapter 6: Functions
 
@@ -294,7 +286,6 @@ Although this is not required by the C language, it is preferred in OpenSSL
 because it is a simple way to add valuable information for the reader.
 The name in the prototype declaration should match the name in the function
 definition.
-
 
 ## Chapter 7: Centralized exiting of functions
 
@@ -360,16 +351,6 @@ derived types. To this end, use just one data declaration per line (no
 commas for multiple data declarations). This leaves you room for a small
 comment on each item, explaining its use.
 
-
-
-
-
-
-
-
-
-
-
 ## Chapter 12: Macros and Enums
 
 Names of macros defining constants and labels in enums are in uppercase:
@@ -420,19 +401,11 @@ must enclose the expression in parentheses:
 Beware of similar issues with macros using parameters. The GNU cpp manual
 deals with macros exhaustively.
 
-
-
-
-
 ## Chapter 14: Allocating memory
 
 OpenSSL provides the following general purpose memory allocators:
 OPENSSL_malloc(), OPENSSL_realloc(), OPENSSL_strdup() and OPENSSL_free().
 Please refer to the API documentation for further information about them.
-
-
-
-
 
 ## Chapter 16: Function return values and names
 
@@ -460,10 +433,6 @@ subject to these rules. Generally they indicate failure by returning some
 out-of-range result. The simplest example is functions that return pointers;
 they return NULL to report failure.
 
-
-
-
-
 ## Chapter 18:  Editor modelines
 
 Some editors can interpret configuration information embedded in source
@@ -489,7 +458,6 @@ editor configurations, and your source files should not override them.
 This includes markers for indentation and mode configuration. People may
 use their own custom mode, or may have some other magic method for making
 indentation work correctly.
-
 
 ## Chapter 19:  Processor-specific code
 
@@ -531,14 +499,12 @@ less complicated than coding pure assembly, and it doesn't provide the
 same performance guarantee across different micro-architecture. Nor is
 it portable enough to meet our multi-platform support goals.
 
-
 ## Chapter 20:  Portability
 
 To maximise portability the version of C defined in ISO/IEC 9899:1990
 should be used. This is more commonly referred to as C90. ISO/IEC 9899:1999
 (also known as C99) is not supported on some platforms that OpenSSL is
 used on and therefore should be avoided.
-
 
 ## Chapter 21: Miscellaneous
 
@@ -552,7 +518,6 @@ Do this instead:
 
     if ((p = BN_new()) == NULL)...
     if (strcmp(a, "FOO") == 0) ...
-
 
 ## Appendix A: References
 
