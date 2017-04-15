@@ -361,13 +361,13 @@ commas for multiple data declarations). This leaves you room for a small
 comment on each item, explaining its use.
 
 
-## Chapter 9: Deleted
 
 
-## Chapter 10: Deleted
 
 
-## Chapter 11: Deleted
+
+
+
 
 
 ## Chapter 12: Macros and Enums
@@ -421,7 +421,7 @@ Beware of similar issues with macros using parameters. The GNU cpp manual
 deals with macros exhaustively.
 
 
-## Chapter 13: Deleted
+
 
 
 ## Chapter 14: Allocating memory
@@ -431,7 +431,7 @@ OPENSSL_malloc(), OPENSSL_realloc(), OPENSSL_strdup() and OPENSSL_free().
 Please refer to the API documentation for further information about them.
 
 
-## Chapter 15: Deleted
+
 
 
 ## Chapter 16: Function return values and names
@@ -461,7 +461,7 @@ out-of-range result. The simplest example is functions that return pointers;
 they return NULL to report failure.
 
 
-## Chapter 17:  Deleted
+
 
 
 ## Chapter 18:  Editor modelines
